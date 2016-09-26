@@ -1,0 +1,788 @@
+Hyper Text Markup Language (HTML)
+
+This section will lead to the creation of a Cat Photo webpage.
+
+Open tags start with the element.
+Closing tags start with a / followed by the element.
+
+<h1> Tags </h1>
+
+
+<h2> Headlines </h2>
+Headlines can be written from h1 to h6
+Each provide a different size
+
+
+Paragraph Element
+<p> The 'p' refers to the paragraph </p>
+
+Comment and uncommenting HTML
+<!-- These symbols are needed to be at the end and start of the comment you want hidden.   -->
+
+Comments can be a way to hide information in the code without impacting it.
+
+
+Fill in the Blank with Placeholder Text
+
+'Lorem ipsum text' is the placeholder text which as been in place since 16th Century.
+It is randomly taked from a passage by Cicero of Ancient Rome.
+
+Change the Color of Text
+
+<h2 style="color:Red">CatPhotoApp <h2>
+
+
+Cascading Style Sheets
+
+<style> </style>
+The style elements provide a way to edit and change the look of selected elements.
+<style>
+    h2 {
+    color: blue;
+    }
+</style>
+
+This calls out the h2 header to be the colour blue.
+The curly brackets are a must otherwise the code won't work.
+
+<h2 class="red-text"> </h2>
+CSS class can create multiple style elements
+
+
+Style Multiple Elements with a CSS Class
+<style>
+    .red-text {
+        color: red;
+    }
+</style>
+The CSS changes only work when there is a fullstop at the start.
+
+
+Change Font-Size of an Element
+
+<style>
+    h1 {
+    font-size: 30px;
+    }
+</style>
+Inside the style text font-size is adjusted to 30 pixels.
+By now the code should look like this:
+<style>
+  .red-text {
+    color: red;
+  }
+  p {
+    font-size: 16px;
+  }
+</style>
+    <h2 class="red-text">CatPhotoApp</h2>
+        <p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+        <p> Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. </p>
+
+Font Family of an Element
+
+font-family sets out the element's font.
+<style>
+h2 {
+    font-family: Sans-serif;
+}
+</style>
+In this case h2's font is changed to be Sans-serif. In the excercise inbetween the Style tags it should look like:
+<style>
+  .red-text {
+    color: red;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+</style>
+
+
+Import Google Font
+
+Inorder to import things from other places you need to call it from somewhere else.
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+This case the link calls for a lobster font from the fonts.googleapis.com which is a website containing a wide variety of different fonts.
+Once you have chosen a font and link it (in between <head> Header </head> tags) , this is then able to be used across the html document.
+
+
+Specify How Fonts Should Degrade
+
+There are several default fonts:
+1. Monospace
+2. Sans
+3. Sans-serif
+Degrade is needed as a backup incase the first font isn't available for use.
+p {
+    font-family: Helvetica, Sans-Serif;
+}
+In this case the paragraph is given the font Helvetica but as a backup there is Sans-serif available.
+For the example
+h2 {font-family: Lobster, Monospace; }  calls for the Lobster font but also provides Monospace as the backup font.
+
+
+Add Images to your Website
+
+img element also includes src attribute to point to a specific image url.
+<img src="https://www.your-image-source.com/your-image.jpg">
+
+A better way to format the 'img' element is to include alt attribute which is used for screen readers to increase accesiblilty and if the image fails to load, provides a way to informr about what the image should contain.
+
+<img src="https://www.your-image-source.com/your-image.jpg" alt="Author standing on a beach with two thumbs up. ">
+The excercise requires you to substitute to insert https://bit.ly/fcc-relaxing-cat
+
+
+Add Borders Around your Elements
+
+CSS borders have properties like style, color and width.
+You can add multiple classes to an element by separating each class attribtue.
+<img class="class1 class2"> they a seperated by a space.
+
+In the excercise :
+<img class="thick-green-border"> enables the use in the Style tags.
+<style>
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+  }
+</style>
+This tells the img to have a green coloured border with a width of 10 pixels and solid lines.
+
+
+Add Rounded Corners with a Border Radius
+
+CSS property called border-radius can be specified with pixels.
+ <img class="smaller-image thick-green-border">
+ <style>
+    .smaller-image {
+        width: 100px;
+        border-radius: 10px;
+    }
+ </style>
+The img now has two classes smaller image and thick green border.
+Adding smaller image to the style enables a change in width and radius to provide a more rounded photo shot.
+
+
+Make Circular Images with a Border Radius
+
+You can use percentages to specify border-radius.
+The excercise requires you to give the cat photo a border-radius of 50%
+<style>
+    .smaller-image {
+        width: 100px;
+        border-radius: 50%;
+    }
+</style>
+
+
+Link to External Pages with Anchor Element
+
+a elements are known as anchor elemetns which are used to link external content to the current website. It can be inserted in a paragraph text section.
+<p> Here's a <a href="http://freecodecamp.com"> Link to freecodecamp </a> to follow.
+The excercise requires anchor for cat pgoto page.
+<p> Here's a <a href="http://freecatphotoapp.com"> Cat Photos </a> link. </p>
+
+
+Nest an Anchor Element
+
+Nesting just means putting one element inside of another element.
+By now  Full page should look like:
+<head>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+</head>
+
+<body>
+    <h2 class="red-text">CatPhotoApp</h2>
+
+    <p> View more
+        <a href="http://www.freecatphotoapp.com">cat photos</a>
+
+    </p>
+
+    <img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back. ">
+
+    <p class="red-text">Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+
+    <p class="red-text">Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+</body>
+
+
+Make Dead links
+
+Organisning a elemetns in advance before you know where you want them to link can be done by adding # so it looks like <a href=#>cat photos</a>.
+It can also be helpful to use when incorporating Jquery into your website.
+
+
+Turn an Image into a Link
+
+Nest images within an anchor to make them a link.
+<a href="#"><img src="https://bit.ly/fcc-running-cats" alt="Three kittens running towards the camera. "></a>
+
+
+Create  Bulleted Unordered list
+
+Unordered List = <ul> element.
+These contain list items = <li>
+<ul>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+</ul>
+This will create a bullet point style list of three items.
+
+Excercise code:
+<ul> Cats Like
+  <li> milk </li>
+  <li> playing </li>
+  <li> tuna </li>
+</ul>
+
+
+Create an Ordered List
+
+ordered List = <ol> element.
+These contain list items = <li>
+<ol>
+    <li> </li>
+    <li> </li>
+    <li> </li>
+</ol>
+This will create a numbered list of three items.
+
+This excercise requires you to create an ordered list of the top 3 things cats hate the most.
+<ol> 3 Things cats hate
+  <li> no food</li>
+  <li> being trapped </li>
+  <li> lack of space </li>
+</ol>
+
+
+Create a Text Field
+
+The aim is to create a web form.
+<input type="text">
+input is self closing so need to add / version.
+input element type is a text form in this case
+For this excercise need to create input text under the ordered list.
+<input type="text">
+
+
+Add Placeholder Text to a Text Field
+
+placeholder value of input text to "cat photo URL" edit the existing input type.
+
+<input type="text" placeholder="cat photo URL">
+
+
+Create a Form Element
+
+Can create web forms to submit data to servers can be done using purely html.
+Specify an actionon form element.
+The form element needs to be told what to do.
+<form action="/url-where-you-want-to-submit-form-data"></form>
+
+Need to add submit cat photo as an action to the form.
+<form action="/submit-cat-photo"> </form>
+
+
+Add a Submit Button to a Form
+
+Submit button can be created from a button's action type.
+<button type="submit">this button submits the form</button>
+
+Excercise Add a submit button to your form element with type submit and "Submit" as its text.
+<button type="submit"> Submit </button>
+
+
+Use HTML5 to Require a Field
+
+Can create specific form fields which needs to be filled in before the user can submit the information.
+make a text input field required
+<input type="text" required>
+This field does not work in Safari
+
+
+Create a Set of Radio Buttons
+
+Radio buttons are a type of input.
+If they are related they should have the same name attribute.
+To pair radio buttons one needs to be indoor and the other outdoor.
+<label><input type="radio" name="indoor-outdoor"> Indoor</label>
+<label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+
+
+Create a Set of Checkboxes
+
+Checkboxes are used in forms and are a form of input.
+Related checkboxes should have the same name attribute.
+They should be nested within own label element.
+<label><input type="checkbox" name="personality"> Loving</label>
+
+
+Check Radio Buttons and Checkboxes by Default
+
+Checked attribute sets the checkbox or radio button to be checked by default.
+<input type="radio" name="test-name" checked>
+The form code so far:
+<form action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+
+  <label><input type="checkbox" name="personality"> Energetic</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+
+Nest Many Elements within a Single Div Element
+
+div element is a division element and general purpose.
+Arguably the most commonly used HTML element.
+Can be used to pass CSS of its own class declarations down to all the elements that it i contains.
+<div> </div> are the tags .
+the excercise code:
+<div>
+<p>Things cats love:</p>
+<ul>
+  <li>cat nip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+<p>Top 3 things cats hate:</p>
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+</div>
+
+
+Give a Background Color to a Div Element
+
+Element background color can be set by using background-color property.
+Create a class called silver-background with the background-color of silver.
+Assign this class to your div element.
+
+<style>
+ .silver-background {
+    background-color:silver;
+  }
+</style>
+
+<body>
+    <div class="silver-background"> </div>
+</body>
+
+
+Set the ID of an Element
+
+id attributes should be unique and contain only one element , used more with jQuery.
+Here's an example of how you give your h2 element the id of cat-photo-app:
+<h2 id="cat-photo-app">
+
+Give your form element the id cat-photo-form.
+The code so far:
+<form id="cat-photo-form" action="/submit-cat-photo">
+  <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+  <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+  <label><input type="checkbox" name="personality" checked> Loving</label>
+  <label><input type="checkbox" name="personality"> Lazy</label>
+  <label><input type="checkbox" name="personality"> Energetic</label>
+  <input type="text" placeholder="cat photo URL" required>
+  <button type="submit">Submit</button>
+</form>
+
+
+Use an ID Attribute to Style an Element
+
+id attributes can be used by css just like classes.
+e.g. #cat-photo-form {
+    background-color: green;
+}
+
+
+Adjusting the Padding of an Element
+
+Three important elements; padding, margin, border
+padding controls space between elements and border.
+
+Change the padding of your green box to match that of your red box.
+<style>
+  .injected-text {
+    margin-bottom: -25px;
+    text-align: center;
+  }
+
+  .box {
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    text-align: center;
+  }
+
+  .yellow-box {
+    background-color: yellow;
+    padding: 10px;
+  }
+
+  .red-box {
+    background-color: red;
+    padding: 20px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 20px;
+  }
+</style>
+<h5 class="injected-text">margin</h5>
+
+<div class="box yellow-box">
+  <h5 class="box red-box">padding</h5>
+  <h5 class="box green-box">padding</h5>
+</div>
+
+
+Adjust the Margin of an Element
+
+margin - controls space between an elements border and surrounding elements.
+Change the margin of the green box to match the red box.
+<style>
+ .red-box {
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 20px;
+    margin: 20px;
+  }
+</style>
+
+
+Add a Negative Margin to an Element
+
+Element's margin to a negative value, the element will grow larger.
+Change the margin of the green box to -15px to match red box.
+<style>
+    .red-box {
+    background-color: red;
+    padding: 20px;
+    margin: -15px;
+  }
+
+  .green-box {
+    background-color: green;
+    padding: 20px;
+    margin: -15px;
+  }
+</style>
+
+
+Add Different Padding to Each Side of an Element
+
+Can customise an element to change padding on different sides.
+CSS allows you to control the padding of an element on all four sides with padding-top, padding-right, padding-bottom, and padding-left properties.
+
+Give the green box a padding of 40px on its top and left side, but only 20px on its bottom and right side.
+<style>  .green-box {
+    background-color: green;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+</style>
+
+
+Add Different Margins to Each Side of an Element
+
+Can customise an element to change margin on different sides.
+CSS allows you to control the margin of an element on all four sides with margin-top, margin-right, margin-bottom, and margin-left properties.
+Give the green box a margin of 40px on its top and left side, but only 20px on its bottom and right side.
+<style>  .green-box {
+    background-color: green;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+</style>
+
+
+
+Use Clockwise Notation to Specify the Padding of an Element
+
+You can specify elements padding all on one line.
+<Style>
+.green-box {
+    background-color: green;
+    padding: 40px 20px 20px 40px;
+  }
+</style>
+
+
+Use Clockwise Notation to Specify the Margin of an Element
+
+You can specify elements margin all on one line.
+<style>
+  .green-box {
+    background-color: green;
+    margin: 40px 20px 20px 40px
+  }
+</style>
+
+
+Style the HTML Body Element
+
+CSS inheritance
+Every HTML page has a body element.
+We can prove that the body element exists here by giving it a background-color of black.
+<style>
+    body {
+        background-color: black;
+    }
+</style>
+The body tags <body> </body> are place after the style and head tags.
+They completely encase the rest of the html document.
+
+
+Inherit Styles from the Body Element
+
+Body element in CSS means all the other elements will inherit body element styles.
+First, create a h1 element with the text Hello World
+<h1> Hello World <h1>
+
+Then, let's give all elements on your page the color of green by adding color: green; to your body element's style declaration.
+<style>
+    body{
+        color: green;
+    }
+</style>
+Finally, give your body element the font-family of Monospace by adding font-family: Monospace; to your body element's style declaration.
+<style>
+    body{
+        font-family: Monospace;
+    }
+</style>
+
+
+Prioritize One Style Over Another
+
+Html elements have multiple styles which can often conflict with eachother.
+e.g. h1 can't be both green and pink
+The overriding colour will be the one selected on the specific element as opposed to the body.
+Create a CSS class called pink-text that gives an element the color pink.
+Give your h1 element the class of pink-text.
+
+<style>
+    .pink-text {
+        color:pink;
+    }
+</style>
+    <h1 class="pink-text"> Hello World! </h1>
+
+
+Override Styles in Subsequent CSS
+
+pink-text class overrode body element css declaration
+Create an additional CSS class called blue-text
+Apply the blue-text class to your h1 element in addition to your pink-text class
+Applying multiple class attributes to a HTML element was covered earlier
+class=" class1 class2"
+
+The order doesn't matter when listing in HTML.
+Style order of declarations is important and the second option will always override the first.
+<style>
+ .pink-text {
+    color: pink;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
+
+
+Override Class Declarations by Styling ID Attributes
+
+Browsers read CSS from top to bottom so a conflict will result in the browser reading the last css declaration:
+Another way to override is using id attributes:
+make your h1 element orange:
+<h1 id="orange-text">
+Leave the blue-text and pink-text classes on your h1 element:
+<h1 id="orange-text" class="pink-text blue-text"> </h1>
+Create a CSS declaration for your orange-text id:
+<style>
+    #orange-text {
+        color:orange;
+}
+</style>
+
+
+Override Class Declarations with Inline Styles
+
+id declarations override class declarations, regardless of placement.
+in-line style are another way of overriding CSS.
+
+Use an in-line style to try to make our h1 element white:
+<h1 id="orange-text" class="pink-text blue-text"  style="color: white">Hello World!</h1>
+
+
+Override All Other Styles by using Important
+
+in-line styles will override all the CSS declarations in your style element.
+Final method to override CSS is most powerful and to be used when using CSS libraries which may result in overriding your existing CSS.
+Need to be absolutely sure that an element has specific CSS, you can use !important
+
+!important to your pink-text element's color declaration to make 100% sure that your h1 element will be pink.
+<style>
+    .pink-text {
+        color: pink!important;
+    }
+</style>
+
+
+Use Hex Code for Specific Colors
+
+hexidecimal code / hex code - decimals, or base 10 numbers, which use the symbols 0 to 9 for each digit.
+Hexadecimals (or hex) are base 16 numbers.
+ symbols 0-9 represents values zero to nine and the letters A,B,C,D,E,F represent values ten to fifteen.
+ CSS use 6 hexadecimal digits to represent colors, two each for the red (R), green (G), and blue (B) components. E.g. #000000 is black and the lowest possible value.
+
+Replace the word black in our body element's background-color with its hex code representation, #000000:
+<style>
+  body {
+    background-color: #000000;
+  }
+</style>
+
+
+
+Use Hex Code to Mix Colors
+
+
+E.g. Orange is combination of red, green and no blue = #FFA500
+0 is the lowest number in hex code, and represents a complete absence of color.
+F is the highest number in hex code, and represents the maximum possible brightness.
+Color           Hex Code
+Dodger Blue     #2998E4
+Green           #00FF00
+Orange          #FFA500
+Red             #FF0000
+
+
+Use Abbreviated Hex Code
+
+Hex codes can be shortened.
+red = #FF0000 but can be shortened to #F00 one digit red, one digit gree and one digit blue.
+Browsers interpret #FF0000 the same as #F00.
+Color       Short Hex Code
+Cyan        #0FF
+Green       #0F0
+Red         #F00
+Fuchsia     #F0F
+
+<style>
+  .red-text {
+    color: #F00;
+  }
+  .fuchsia-text {
+    color: #F0F;
+  }
+  .cyan-text {
+    color: #0FF;
+  }
+  .green-text {
+    color: #0F0;
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+<h1 class="fuchsia-text">I am fuchsia!</h1>
+<h1 class="cyan-text">I am cyan!</h1>
+<h1 class="green-text">I am green!</h1>
+
+
+Use RGB values to Color Elements
+
+RGB for black = rgb(0, 0, 0,)
+RGB for white = rgb(255, 255, 255)
+RGB you specify the brightness of each color with a number between 0 and 255.
+Replace the hex code in our body element's background color with the RGB value for black: rgb(0, 0, 0)
+<style>
+  body {
+    background-color: rgb(0,0,0);
+  }
+</style>
+
+
+Use RGB to Mix Colors
+
+Color       RGB
+Blue        rgb(0, 0, 255)
+Red         rgb(255, 0, 0)
+Orchid      rgb(218, 112, 214)
+Sienna      rgb(160, 82, 45)
+
+Replace the color words in our style element with their correct RGB values.
+<style>
+  .red-text {
+    color: rgb(255, 0, 0);
+  }
+  .orchid-text {
+    color:rgb(218, 112, 214);
+  }
+  .sienna-text {
+    color: rgb(160, 82, 45);
+  }
+  .blue-text {
+    color: rgb(0, 0, 255);
+  }
+</style>
+
+<h1 class="red-text">I am red!</h1>
+
+<h1 class="orchid-text">I am orchid!</h1>
+
+<h1 class="sienna-text">I am sienna!</h1>
+
+<h1 class="blue-text">I am blue!</h1>
+
+
