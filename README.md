@@ -3,7 +3,7 @@ Free Code camp excercise
 
 A collection of Free Code Camp work and explanations. 
 
-Front End Certification Section:
+##Front End Certification Section:
 
 1. HTML5 and CSS
 
@@ -41,3 +41,36 @@ Advanced Front End Development Projects
 * Build a Tic Tac Toe Game
 * Build a Simon Game
 
+## Data Visualization Certificate 
+1. Sass
+2. React
+3. D3
+
+Projects :
+React Projects
+
+* Build a Markdown Previewer
+* Build a Camper Leaderboard 
+* Build a Recipe Box
+* Build the Game of Life
+* Build a Roguelike Dungeon Crawler Game
+
+Data Visualization Projects 
+* Visualize Data with a Bar Chart
+* Visualize Data with a Scatterplot Graph 
+* Visualize Data with a Heat Map
+* Show National Contiguity with a Force Directed Graph
+* Map Data Across the Globe
+
+## Back End Development Certification
+
+1. Node.js and Express.js
+2. Git
+3. Mongo DB
+
+Projects:
+API Projects
+
+
+
+Dynamic Web Application Projects 
