@@ -70,6 +70,7 @@ node program.js
 ```
   
 * verify
+
   ```sh
   learnyounode verify program.js
   ```
@@ -87,14 +88,35 @@ var sum = 0;
 for ( var i = 2, i < process.argv.length;i++){
   sum += Number(process.argv[i]);
 }
-
 console.log(sum)
   ```
   
   ### 3. Complete "My First I/O"
   
+
+
+### 4. Complete "My First Async I/O"
+
+### 5. Complete "Filtered LS"
+
+### 6. Complete "Make it Modular"
+
+### 7. Complete "HTTP Client"
   
   
-  
+ Free Code Camp course only required completion of the first Seven Levels. 
+ However I wish to further my learning, therefore I have included my work for the other six levels. 
+ 
+### 8. "HTTP Collect"
+
+### 9. "Juggling Async"
+
+### 10. "Time Server"
+
+### 11. "HTTP File Server"
+
+### 12. "HTTP Uppercaserer"
+
+### 13. "HTTP JSON API Server"
   
   
