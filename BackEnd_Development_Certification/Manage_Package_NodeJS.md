@@ -42,7 +42,7 @@ how-to-npm solution
 
 ## Tasks to complete 
 
-00. Complete "Install npm"
+#### 00. Complete "Install npm"
 
 ```sh
 npm install -g how-to-npm
@@ -64,7 +64,7 @@ You have a recent version of npm installed!
 ```
 
 
-01. Complete "Dev Environment"
+#### 01. Complete "Dev Environment"
 
 * create new directory and move to it
 
@@ -105,7 +105,7 @@ how-to-npm verify
 
 
 
-02. Complete "Login"
+#### 02. Complete "Login"
 * Create account and see who you are logged in as
 
 ```sh
@@ -129,7 +129,7 @@ hopefully won't sue us.
 Excelsior!
 ```
 
-03. Complete "Start A Project"
+#### 03. Complete "Start A Project"
 
 replace <username> with newly created 
 
@@ -145,7 +145,7 @@ Congratulations!
 You created a project!  View the package.json file to see it.
 ```
 
-04. Complete "Install A Module"
+#### 04. Complete "Install A Module"
 
 * install a dependency: @linclark/pkg module
 
@@ -154,7 +154,7 @@ npm install @linclark/pkg
 
 ```
 
-05. Complete "Listing Dependencies"
+#### 05. Complete "Listing Dependencies"
 ```sh
 npm ls
 how-to-npm verify OK
@@ -163,7 +163,7 @@ npm install @linclark/pkg --save
 how-to-npm verify OK
 ```
 
-06. Complete "npm Test"
+#### 06. Complete "npm Test"
 
 * Create new file called “test.js”
 * Edit package.json
@@ -175,7 +175,7 @@ how-to-npm verify OK
 ```
 
 
-07. Complete "Package Niceties"
+#### 07. Complete "Package Niceties"
 
 * Create a README.md file to add description
 * Add a “repository” field in package.json with a url
@@ -191,14 +191,14 @@ npm init
 npm install
 ```
 
-08. Complete "Publish"
+#### 08. Complete "Publish"
 
 * publish module
 ```sh
 npm publish
 ```
 
-09. Complete "Version"
+#### 09. Complete "Version"
 * update the version number
 
 ```sh
@@ -206,13 +206,13 @@ Modified package.json “version”: “1.0.1”,
 npm version
 ```
 
-10. Complete "Publish Again"
+#### 10. Complete "Publish Again"
 * publish again
 
 ```sh
 npm publish
 ```
-11. Complete "Dist Tag"
+#### 11. Complete "Dist Tag"
 
  `npm dist-tag add <pkg>@<version> [<tag>]`
 if it's a security releasefor a legacy version, or something), then you can manually manage  
@@ -222,7 +222,7 @@ To add a tag type in the name of the tag. npm dist-tag add pkg@1.0.1 beta
 npm dist-tag add @linclark/pkg@1.0.2 [beta]
 ```
 
-12. Complete "Dist Tag Removal"
+#### 12. Complete "Dist Tag Removal"
 
 * remove dist tag
 ```sh
@@ -230,24 +230,24 @@ npm dist-tag ls @linclark/pkg
 npm dist-tag rm @linclark/pkg [beta]
 ```
 
-13. Complete "Outdated"
+#### 13. Complete "Outdated"
 ```sh
  how-to-npm verify @linclark/pkg
 ```
 
-14. Complete "Update"
+#### 14. Complete "Update"
 ```sh
 npm update [-g] [@linclark/pkg]
 ```
 
-15. Complete "Rm"
+#### 15. Complete "Rm"
 * removing dependencies
 
 ```sh
 npm rm --save
 ```
 
-16. Complete "Finale"
+#### 16. Complete "Finale"
 ```sh
  how-to-npm verify
  ```
