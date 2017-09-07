@@ -236,10 +236,6 @@ var http = require('http')
   
   
   
-  
- Free Code Camp course only required completion of the first Seven Levels. 
- However I wish to further my learning, therefore I have included my work for the other six levels. 
- 
 ### 8. "HTTP Collect"
 
 
