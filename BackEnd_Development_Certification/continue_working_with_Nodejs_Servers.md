@@ -1,4 +1,7 @@
-# HTTP Collect
+# Continue working with Nodejs Servers
+
+## Tasks: 
+#### Complete 8. "HTTP Collect"
 
 - Write a program that performs an HTTP GET request to a URL provided to you  
   as the first command-line argument.
@@ -22,6 +25,7 @@
   List) and concat-stream; take your pick!  
 
 I went with option 2.
+
 install bl:
 ```sh
 npm install bl
@@ -43,3 +47,54 @@ http.get(process.argv[2], function (response) {
 })
 
 ```
+
+### 9. "Juggling Async"
+
+This problem is the same as the previous problem (HTTP COLLECT): 
+ - You need to use http.get()
+ - However, this time you will be provided with three URLs as the first three command-line arguments 
+   
+- You must collect the complete content provided to you by each of the URLs  
+- print it to the console (stdout)
+- just the data as a String; one line per URL.
+- The catch is that you must print them out in the same order as the URLs are provided to you as command-line arguments
+
+#### Plan: 
+1. queue results and keep track of the urls content returned (how much)
+2. count call backs (could use async module for ease but won't for challenge
+
+```sh
+const http = require('http')
+const bl = require('bl')
+const results = []
+let count = 0
+
+function printResults () {
+  for (let i = 0; i < 3; i++) {
+    console.log(results[i])
+  }
+  results[index] = data.toString()
+  count++
+  
+  if (count ===3) {
+    printResults()
+   }
+  }))
+ })
+}
+
+for (let = 0; i < 3; i++) {
+  httpGet(i)
+}
+```
+
+
+### 10. "Time Server"
+
+### 11. "HTTP File Server"
+
+### 12. "HTTP Uppercaserer"
+
+### 13. "HTTP JSON API Server"
+  
+  
