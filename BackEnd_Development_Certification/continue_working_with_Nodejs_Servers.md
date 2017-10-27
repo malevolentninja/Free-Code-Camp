@@ -1,7 +1,7 @@
 # Continue working with Nodejs Servers
 
 ## Tasks: 
-#### Complete 8. "HTTP Collect"
+### Complete 8. "HTTP Collect"
 
 - Write a program that performs an HTTP GET request to a URL provided to you  
   as the first command-line argument.
@@ -13,8 +13,7 @@
   of characters received from the server. 
 - The second line should contain the complete String of characters sent by the server.  
 
-### Two options : 
-
+#### Two options : 
   1. Collect data across multiple "data" events and append the results  
   together prior to printing the output. Use the "end" event to determine  
   when the stream is finished and you can write the output.  
@@ -90,6 +89,44 @@ for (let = 0; i < 3; i++) {
 
 
 ### 10. "Time Server"
+
+Write a TCP time server!  
+   
+- Your server should listen to TCP connections on the port provided by the first argument to your program. 
+- For each connection you must write thecurrent date & 24 hour time in the format:  
+     "YYYY-MM-DD hh:mm"  
+   
+-followed by a newline character. 
+- Month, day, hour and minute must be zero-filled to 2 integers. For example:  
+   
+     "2013-07-06 17:42"  
+   
+  After sending the string, close the connection. 
+
+
+```sh 
+const net = require('net')
+
+function zeroFill (i) {
+  return (i < 10 ? '0' : '') + i
+}
+
+function now () {
+  const d = new Date()
+  return d.getFullYear() + '-' +
+    zeroFill(d.getMonth() + 1) + '-' +
+    zeroFill(d.getDate()) + ' ' +
+    zeroFill(d.getHours()) + ':' +
+    zeroFill(d.getMinutes())
+}
+
+const server = net.createServer(function (socket) {
+  socket.end(now() + '\n')
+})
+
+server.listen(Number(process.argv[2]))
+
+```
 
 ### 11. "HTTP File Server"
 
