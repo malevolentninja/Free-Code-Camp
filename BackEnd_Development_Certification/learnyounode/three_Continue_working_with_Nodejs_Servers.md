@@ -127,11 +127,3 @@ const server = net.createServer(function (socket) {
 server.listen(Number(process.argv[2]))
 
 ```
-
-### 11. "HTTP File Server"
-
-### 12. "HTTP Uppercaserer"
-
-### 13. "HTTP JSON API Server"
-  
-  
