@@ -17,7 +17,7 @@
 
 ## MongoDB
 
-* Store Data in MongoDB
+* [Store Data in MongoDB](https://github.com/malevolentninja/nodschool_course_notes/tree/master/learnyoumongo)
 
 ## API Projects
 
