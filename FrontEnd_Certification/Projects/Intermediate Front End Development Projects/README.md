@@ -2,7 +2,8 @@
 
 
 # 1. Random Quote Machine
-Technologies:
+[![Screen_Shot_2017-11-10_at_12.21.43.png](https://s33.postimg.org/cu7mifhm7/Screen_Shot_2017-11-10_at_12.21.43.png)](https://postimg.org/image/e99775ip7/)
+## Technologies:
 - HTML
 - CSS
 - JavaScript
