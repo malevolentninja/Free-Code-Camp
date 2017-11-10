@@ -15,14 +15,14 @@ Technologies:
 - JavaScript
 - APIs
 
-#3. Twitch API
+# 3. Twitch API
 Technologies:
 - HTML
 - CSS
 - JavaScript
 - APIs
 
-#4. Build a Wikipedia Viewer
+# 4. Build a Wikipedia Viewer
 Technologies:
 - HTML
 - CSS
