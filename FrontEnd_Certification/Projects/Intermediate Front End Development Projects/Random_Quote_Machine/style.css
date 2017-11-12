@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html{
+  font-family: 'Ubuntu';
+}
+
+header {
+  text-align: center;
+  padding: 10px, 20px;
+}
+
+h1 {
+ color: #FFFFFF;
+ letter-spacing: .2em;
+}
+
+body {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .2em;
+  background-image: url("https://img00.deviantart.net/6e70/i/2016/066/1/0/blue_oil_paint_background_texture_by_jpmorrow-d9ub7tq.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.quotePlace{
+  background-color: #f7f7f7;
+    padding: 10px 40px;
+  margin: 60px;
+   text-transform: none;
+  letter-spacing: .1rem;
+
+}
+
+btn{
+  position: relative;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  border-width: 5px;
+  border-style: solid;
+  color: #FFFFFF;
+}
+
+.newQuote {
+ padding: 0;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  border: 3rem;
+  padding: 2px 20px;
+  margin-top: .2rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+
+}
+
+#tweet-btn{
+  padding: 0;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  outline: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  border: 3rem;
+  padding: 10px 20px;
+  margin-top: .2rem;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+}
+
+p{
+  text-size: 10px;
+}
+
+.quotebox {
+  background: #FFFFFF;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+footer {
+  margin: auto;
+  margin-top: 40px;
+  float: none;
+  text-align: center;
+  color: #42f4d1;
+}
