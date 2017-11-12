@@ -26,7 +26,7 @@ A collection of Free Code Camp work and explanations.
 
 10. [Advanced Algorithm Scripting](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Advanced%20Algorithm%20Scripting)
 
-[Projects:](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects)
+### [FrontEnd Projects:](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects)
 
 [Basic Front End Development Projects](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects/Basic%20Front%20End%20Development%20Projects)
 * Build a Tribute Page - Completed
@@ -71,7 +71,7 @@ Data Visualization Projects
 2. Git
 3. Mongo DB
 
-Projects:
+BackEnd Projects:
 API Projects
 
 
