@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Wikipedia Viewer</title>
+  <meta name="description" content="Wikipedia Viewer">
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header id="site-info">
+    <h1 id="heading">Wikipedia Viewer</h1>
+    <p class="intro">Enter a search term or generate a random article</p>
+  </header>
+
+  <main id="content" role="main">
+    <section class="top-bar">
+        <button class="btn" id="random-btn">Get random</button>
+
+        <form id="search-wiki" action="#">
+          <input id="search-input" placeholder="Type a search and press enter" type="text">
+
+        </form>
+        <button class="btn" id="find-results">Search</button>
+
+    </section>
+    <section id="search-results">
+
+    </section>
+  </main>
+  <footer>
+    <p> Made by Olivia Boertje :) </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
