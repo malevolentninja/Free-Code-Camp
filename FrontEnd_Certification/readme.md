@@ -1,30 +1,27 @@
-## Front End Certification Section:
+# Front End Certification Section:
 
 1. HTML5 and CSS
 
 2. Responsive Design with Bootstrap
 
-3. [jQuery](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/jQuery) 
-- Working through jQuery 
+3. jQuery
 
-5. [Javascript](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Javascript)
-- Working through Javascript 
+4. Javascript
 
-6. [Object Oriented and Functional Programming](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Object%20Orientated%20and%20Functional%20Programming)
-- Learning about object orientated and functional programming
+5. Object Oriented and Functional Programming
 
-7.  [Basic Alogrithm Scripting](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Basic%20Algorithm%20Scripting)
+6. [Basic Alogrithm Scripting](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Basic%20Algorithm%20Scripting)
 
-8.  [JSON APIs and Ajax](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/JSON%20APIs%20and%20AJAX)
+7.  [JSON APIs and Ajax](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/JSON%20APIs%20and%20AJAX)
 
-9. [Intermediate Alogorithm Scripting](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Intermediate%20Algorithm%20Scripting) 
+8. [Intermediate Alogorithm Scripting](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Intermediate%20Algorithm%20Scripting) 
 
-10. [Advanced Algorithm Scripting](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Advanced%20Algorithm%20Scripting)
+9. [Advanced Algorithm Scripting](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Advanced%20Algorithm%20Scripting)
 
-[Projects:](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects)
+## [Projects:](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects)
 
 [Basic Front End Development Projects](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects/Basic%20Front%20End%20Development%20Projects)
-* Build a Tribute Page - Completed
+* Build a Tribute Page
 * Build a Personal Portfolio Page
 
 [Intermediate Front End Development Projects](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects/Intermediate%20Front%20End%20Development%20Projects)
