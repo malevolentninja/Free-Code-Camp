@@ -1,0 +1,160 @@
+/* font smoothing */
+
+html,
+body,
+input,
+textarea,
+buttons {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+html {
+    font-size: 10px;
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+*:focus {
+    outline: none;
+}
+body {
+    font-family: "Lora", serif;
+    background: linear-gradient(to right, rgb(6, 26, 39), rgb(102, 204, 255));
+    animation: onload 0.5s ease;
+}
+header {
+    font-family: "Ubuntu", sans-serif;
+    width: 14em;
+    height: 3em;
+    margin-left: 18em;
+    margin-top: .7em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top {
+    font-size: 2em;
+    color: #003333;
+    font-weight: bold;
+    position: relative;
+}
+.calculator {
+    border-radius: .6em;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50em;
+    height: 35em;
+}
+.screen {
+    width: 90%;
+    margin: 20px auto;
+    color: #333333;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 2.5rem;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    text-align: right;
+}
+.keys {
+    width: 90%;
+    margin: 0 auto;
+    font-weight: 800;
+}
+.keys button {
+    width: 22.5%;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    padding: 0;
+    border: none;
+    background: none;
+}
+.keys button:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+    cursor: pointer;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button.key-all_clear {
+    background-color: #FF0000;
+    color: #003333;
+}
+button.key-all_clear:hover {
+    background-color: #FF0066;
+    color: #FFFFFF;
+}
+button.key-clear_entry {
+    background-color: #FF9900;
+    color: #003333;
+}
+button.key-clear_entry:hover {
+    background-color: #FFCC33;
+    color: #FFFFFF;
+}
+button.operator {
+    background-color: #00CC99;
+    color: #003333;
+}
+button.operator:hover {
+    background-color: #00FA9A;
+}
+button.key-toggle_sign {
+    background-color: #FFD700;
+    color: #003333;
+}
+button.key-toggle_sign:hover {
+    background-color: #FFCC66;
+    color: #FFFFFF;
+}
+button.key-equals {
+    background-color: #336699;
+    color: #003333;
+}
+button.key-equals:hover {
+    background-color: #3399CC;
+    color: #FFFFFF;
+}
+footer {
+    width: 14em;
+    height: 3em;
+    font-family: "Ubuntu", sans-serif;
+    margin-left: 35em;
+    margin-top: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom {
+    font-size: 1.2em;
+    color: #0000000;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+@keyframes onload {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

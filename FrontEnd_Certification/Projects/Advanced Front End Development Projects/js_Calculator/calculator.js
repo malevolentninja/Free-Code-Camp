@@ -30,11 +30,11 @@ function inputDigit(digit) {
 }
 
 function handleOperator(nextOperator) {
-  var firstOperand = calculator.firstOperand,
+  let firstOperand = calculator.firstOperand,
       inputOperand = calculator.inputOperand,
       operator = calculator.operator;
 
-  var inputValue = parseFloat(inputOperand);
+  let inputValue = parseFloat(inputOperand);
 
   if (operator && calculator.waitingForOperand) {
     calculator.operator = nextOperator;
@@ -45,7 +45,7 @@ function handleOperator(nextOperator) {
   if (firstOperand == null) {
     calculator.firstOperand = inputValue;
   } else if (operator) {
-    var currentValue = firstOperand || 0;
+    let currentValue = firstOperand || 0;
     let result = performOperation[operator](currentValue, inputValue);
 
     calculator.inputOperand = String(result);
@@ -167,18 +167,18 @@ digits.forEach(function (digit) {
   });
 });
 
-var decimal = document.querySelector('.decimal');
+let decimal = document.querySelector('.decimal');
 decimal.addEventListener('click', inputDecimalPoint);
 
-var operators = document.querySelectorAll('.operator');
+let operators = document.querySelectorAll('.operator');
 operators.forEach(function (operator) {
   return operator.addEventListener('click', function (event) {
-    var nextOperator = event.target.value;
+    let nextOperator = event.target.value;
     handleOperator(nextOperator);
   });
 });
 
-var functionKeys = document.querySelectorAll('.function');
+let functionKeys = document.querySelectorAll('.function');
 functionKeys.forEach(function (fn) {
   return fn.addEventListener('click', function (event) {
     handleFunction[event.target.value]();
