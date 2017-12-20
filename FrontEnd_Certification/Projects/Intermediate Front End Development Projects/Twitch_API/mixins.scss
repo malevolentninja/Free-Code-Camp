@@ -6,44 +6,8 @@
     box-sizing: border-box;
     }
 
-@mixin img-logo($width, $height) {
-  width: $width;
-  height: $height;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: scale(1.15);
-  opacity:0.9;
-  border-radius: 15em;
-  transition:transform 0.5s, opacity 0.5s;
-  position: relative;
-}
-
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   border-radius: $radius;
   background-clip: padding-box;  /* stops bg color from leaking outside the border: */
-}
-
-@mixin position($position, $args) {
-  @each $o in top right bottom left {
-    $i: index($args, $o);
-    @if $i and $i + 1 <= length($args) and type-of(nth($args, $i + 1)) == number {
-      #{$o}: nth($args, $i + 1);
-    }
-  }
-  position: $position;
-}
-
-// Positioning helpers
-@mixin absolute($args: '') {
-  @include position(absolute, $args);
-}
-
-@mixin fixed($args: '') {
-  @include position(fixed, $args);
-}
-
-@mixin relative($args: '') {
-  @include position(relative, $args);
 }
