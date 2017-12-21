@@ -1,0 +1,147 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1em;
+}
+
+.title {
+  color: #6441a5;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3em;
+  font-weight: 800;
+  margin-left: 7em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.twitch_logo {
+  max-width: 7em;
+  max-height: 7em;
+  margin-left: 5em;
+  margin-top: .6em;
+}
+
+h2, h3 {
+  color: #6441a5;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3em;
+  margin: 1em;
+  font-style: bold;
+  text-align: center;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding: 1em;
+  line-height: 1.3em;
+  border-radius: 2em;
+}
+
+button:hover, button:active {
+  background-clip: padding-box;
+  -webkit-border-radius: 1em;
+  background-clip: padding-box;
+  border-radius: 1em;
+  background-color: #6441a5;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+#offline {
+  color: #722222;
+  background: #000000;
+}
+
+#online {
+  color: #7ea03f;
+  background: #000000;
+}
+
+a {
+  color: #722222;
+}
+a:focus, a:hover, a:visited {
+  color: #722222;
+}
+
+form {
+  position: relative;
+  margin-left: 45em;
+  margin-top: .2em;
+}
+
+input {
+  height: .8em;
+  position: relative;
+  width: 16em;
+  padding: 1.1em;
+  font-size: 1em;
+  border: 0.2em solid #6441a5;
+  margin-left: 8.6em;
+}
+
+.stream {
+  font-size: 1.2em;
+  position: relative;
+  white-space: nowrap;
+  -webkit-border-radius: 0.5em;
+  background-clip: padding-box;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.image {
+  max-width: 6.5em;
+  max-height: 6.5em;
+  border: 0.4em solid #6441a5;
+  -webkit-border-radius: 3em;
+  background-clip: padding-box;
+  border-radius: 3em;
+  position: relative;
+  margin-top: .3em;
+  margin-left: 1em;
+}
+.image:hover {
+  opacity: 1.0;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+.btns {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 22.5%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+#on {
+  color: #7ea03f;
+}
+#on:hover {
+  background-color: #7ea03f;
+  color: #FFFFFF;
+}
+
+#off {
+  color: #722222;
+}
+#off:hover {
+  background-color: #722222;
+  color: #FFFFFF;
+}

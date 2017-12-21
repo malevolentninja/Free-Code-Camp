@@ -1,34 +1,60 @@
 <DOCTYPE! html>
 <html>
 <head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Twitch Streamers calling Twitch API">
+  <meta name="keywords" content="HTML, CSS, JavaScript, jQuery, Twitch, API">
+  <meta name="author" content="Olivia Boertje">
+
+  <title>Twitch Streams</title>
+
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="main.js"> </script>
 
 </head>
+
 <body>
-  <header class="title">
-        Twitch Streamers
+  <header>
+    <img src="img/twitch_logo.png" class="twitch_logo" alt="twitch_logo">
+    <h1 class="title"> Twitch Streamers </h1>
     </header>
 
-  <main role="main">
-  <section class="container" id="content">
+  <main role="main" class="container" id="content">
+  <section class="top">
 
-
-      <button class="btns" id="all">All</button>
-      <button class="btns" id="on">Online</button>
-      <button class="btns" id="off">Offline</button>
-    </div>
+    <button class="btns" id="all">All</button>
+    <button class="btns" id="on">Online</button>
+    <button class="btns" id="off">Offline</button>
+    <button class="btns" id="find-results">Search</button>
+    <form id="searching" action="#">
+          <input id="search-input" placeholder="Enter Twitch Channel Name" type="text">
+    </form>
 
   </section>
   <section class="stream">
   <div class="row">
 
-      <div class="column-5" id="twitch"></div>
+      <div class="column-5"></div>
       <div class="column-3" id="online"></div>
       <div class="column-3" id="offline"></div>
      </div>
   </div>
   </section>
-    <footer> Made by Olivia Boertje </footer>
+    <footer>
+      <p> Made by Olivia Boertje <p>
+    </footer>
   </main>
 </body>
-
 </html>
