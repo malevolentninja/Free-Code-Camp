@@ -1,14 +1,14 @@
 # Advanced Front End Development Projects
 
-### Build a Javascript Calculator
-
-- Vanilla js, HTML and CSS
-- [Demo](https://codepen.io/malevolentninja/pen/zPOXwM)
-
-### Build a Pomodoro Clock
+## Build a Javascript Calculator
+[Demo](https://codepen.io/malevolentninja/pen/zPOXwM)
+- js, HTML and CSS
 
 
-### Build a Tic Tac Toe Game
+## Build a Pomodoro Clock
 
 
-### Build a Simon Game
+## Build a Tic Tac Toe Game
+
+
+## Build a Simon Game

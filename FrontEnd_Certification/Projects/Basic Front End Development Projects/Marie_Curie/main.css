@@ -271,18 +271,34 @@ h2 {
     /* For IE8 and earlier */
 }
 .links {
-    border: #fbfbfb solid 4px;
+    border: #fbfbfb solid .1em;
     background-color: #3498db;
     link-style-type: none;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
 }
-#wiki:hover #weblink:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: #0493bd;
+
+.btn {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 30%;
+  height: .3em;
+  font-size: .7em;
+  cursor:pointer;
 }
 
-.footer-custom {
-    background-color: rgba(204, 204, 204, 0.6);
+a:link  {
+  text-decoration:  none;
+  font-weight:      bold;
+  }
+
+a:hover {
+  color: rgba(204, 204, 204, 0.6);
+  background-color:color: #0493bd;
+}
+a:visited {
+  color: #FFFF;
+
 }
