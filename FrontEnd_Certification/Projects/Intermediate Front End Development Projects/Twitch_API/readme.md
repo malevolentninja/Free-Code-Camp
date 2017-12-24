@@ -8,13 +8,16 @@ User Stories:
 ​- Users will see a placeholder notification if a streamer has closed their Twitch account (or the account never existed).
 - Users can search for TwitchTv Streamers and view whether they are online or not.
 
+[Demo](https://codepen.io/malevolentninja/full/NwKmav/)
+[Files](https://github.com/malevolentninja/freeCodeCamp/tree/master/FrontEnd_Certification/Projects/Intermediate%20Front%20End%20Development%20Projects/Twitch_API)
+[Blog](https://urbanwudangwarrior.wordpress.com/2017/12/06/twitch-tv-status-app/)
 
 ### Pre-requisites
 UPDATE: Due to a change in conditions on API usage explained here Twitch.tv now requires an API key, but we've built a workaround. 
     
 Use https://wind-bow.gomix.me/twitch-api instead of twitch's API base URL (i.e. https://api.twitch.tv/kraken ) and you'll still be able to get account information, without needing to sign up for an API key.
 
-Technology Used: 
+### Technology Used: 
 - HTML
 - CSS
 - SCSS
@@ -22,7 +25,7 @@ Technology Used:
 - Twitch API call
 
 
-#### Potential improvements
+### Potential improvements
 - Make pure JavaScript
 - Make in a framework for additional reusable components
 - NodeJs server side
