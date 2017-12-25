@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio for FCC to display projects.">
+  <meta name="keywords" content="Portfolio, Free Code Camp, CSS, HTML, Project 1">
+  <meta name="author" content="Olivia Boertje">
+
+  <title> FCC: Portfolio Page </title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="main.css">
+
+  <!-- Scripts -->
+  <script src="main.js"> </script>
+
+  </head>
+  <body id="body">
+    <nav class="navbar" id="navbar">
+      <a class="nav-item" href="#me" id="nav-home">home</a> <a class="nav-item" href="#projects" id="nav-portfolio">portfolio</a> <a class="nav-item" href="#about" id="nav-about">about</a> <a class="nav-item" href="#contact" id="nav-contact">contact</a>
+    </nav>
+    <header class="headings" id="me">
+      <img id="titleimg" src="http://religionfacts.imgix.net/955/147559.jpg?fit=max&h=1400&q=85&w=1400&s=433281f67f8a0b6cdcb326985d6f73a9"><br>
+      <h1 id="me">Olivia Boertje</h1>
+    </header><br>
+    <main role="main">
+      <section id="about">
+        <h2 class="intro" id="tag-line">Technology Enthusiast</h2><br>
+        <p>This website was created to showcase a few of my skills and projects I have created whilst working on the Free Code Camp Certification.</p>
+        <p>I am a self-taught web developer, eager to learn more and develop my skills further.</p><br>
+        <p>I am hardworking and continue to strengthen my knowledge of modern frameworks from JavaScript, Ruby and Python.</p>
+        <p>The Free code camp course will result in my completion of a full-stack certification. </p> <p>Essentially I will be able to make websites look and function well from front to back!</p>
+      </section><br>
+      <section class="skills">
+        <!-- Make into table soft and hard skills -->
+        <table>
+          <tr>
+            <th>Soft Skills</th>
+            <th>Hard Skills</th>
+          </tr>
+          <tr>
+            <td>Communication</td>
+            <td>HTML5</td>
+          </tr>
+          <tr>
+            <td>Teamwork</td>
+            <td>CSS & SCSS</td>
+          </tr>
+          <tr>
+            <td>Independant</td>
+            <td>JavaScript</td>
+          </tr>
+          <tr>
+            <td>Enthusiasm to Learn</td>
+            <td>Ruby</td>
+          </tr>
+          <tr>
+            <td>Problem Solving</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>Organised</td>
+            <td>QGIS & ArcGIS</td>
+          </tr>
+        </table> <!---
+          <li> MySQL & PostgreSQL</li>
+  <li> MongoDB </li>
+  <li> Elastic search </li> -->
+      </section><br>
+      <section class="portfolio" id="projects">
+        <h2 class="headings">Projects</h2>
+        <p id="portfolio-intro">Here are my Free Code Camp Projects.</p>
+        <div class="portfolio-items">
+          <article id="project-1">
+            <a href="https://codepen.io/malevolentninja/pen/PGwmpK" target="_blank">
+            <figure>
+              <img alt="Marie Curie" class="portfolio-img" src="https://picsum.photos/400/200">
+              <figcaption>
+                <h3 class="project-title">Tribute Page</h3>
+              </figcaption>
+            </figure></a>
+          </article>
+          <article id="project-2">
+            <a href="https://codepen.io/malevolentninja/pen/WXKNRa" target="_blank">
+            <figure>
+              <img alt="First Page" class="portfolio-img" src="https://picsum.photos/g//400/200">
+              <figcaption>
+                <h4 class="project-title">My First Website</h4>
+              </figcaption>
+            </figure></a>
+          </article>
+          <article id="project-3">
+            <a href="https://codepen.io/malevolentninja/pen/qVNZyK" target="_blank">
+            <figure>
+              <img alt="quote-machine" class="portfolio-img" src="https://picsum.photos/g/400/200">
+              <figcaption>
+                <h4 class="project-title">Random Quote Machine</h4>
+              </figcaption>
+            </figure></a>
+          </article>
+          <article id="project-4">
+            <a href="https://codepen.io/malevolentninja/pen/zPOXwM" target="_blank">
+              <img alt="placeholder" class="portfolio-img" src="//placehold.it/200?text=PLACEHOLDER">
+            <figure>
+              <figcaption>
+                <h4>JavaScript Calculator</h4>
+                <p>HTML, CSS and Pure JS</p>
+              </figcaption>
+            </figure></a>
+          </article>
+        </div>
+      </section>
+      <section class="row blog-link" id="social_media">
+        <!--- buttons for free code camp, linkedIn and blog? -->
+        <h2 class="headings">Social Media</h2><button class="btn btn-primary btn-lg" id="blog" role="button">Blog</button> <button class="btn btn-primary btn-lg" id="github" role="button">Github</button> <button class="btn btn-primary btn-lg" id="linkedin" role="button">LinkedIn</button> <button class="btn btn-primary btn-lg" id="blog">Free Code Camp</button> <button class="btn btn-primary btn-lg" id="blog" role="button">twitter</button>
+      </section>
+      <section id="contact">
+        <div id="form-container">
+          <!-- Jquery the contact form to make responsive? -->
+          <h2 class="headings">Contact</h2>
+          <form id="contact_me" name="contact_me">
+            <input id="name" name="user-name" placeholder="Name" type="text"> <input id="email" placeholder="Your Email" type="email">
+            <textarea id="message" name="user-message"></textarea>
+            <button class="btn" id="btn-submit" type="submit" value="Submit">Submit</button>
+          </form><!--javascript alert "are you sure you want to submit?" -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p id="credits">Made by Olivia Boertje :)</p>
+    </footer>
+  </body>
+  </html>
