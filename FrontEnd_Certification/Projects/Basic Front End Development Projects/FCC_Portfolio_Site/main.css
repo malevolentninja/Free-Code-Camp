@@ -33,10 +33,7 @@ nav {
   margin-bottom: -80px;
   box-shadow: 0 2px 3px rgb(173, 230, 216);
 }
-nav:hover {
-  opacity: 1;
-  color: #FFFFFF;
-}
+
 #navbar a {
   float: right;
   display: block;
@@ -56,6 +53,7 @@ nav:hover {
 .sticky+.content {
   padding-top: 60px;
 }
+
 body {
   font-family: "Ubuntu", sans-serif;
   color: #2c778f;
@@ -131,6 +129,7 @@ table th {
 .skills {
   color: #44a6c6;
 }
+
 #outro {
   font-size: .7em;
   font-style: italic;
@@ -199,37 +198,15 @@ section .btn-lg:hover {
   left: 50%;
   margin-left: -100px;
 }
-#form-container {
-  width 5em;
-  height: 15em;
-  margin: 0 auto;
-  position: relative;
-  display: block;
-  border-radius: .3em solid #FFF;
-}
-input, textarea {
-  outline: none;
-}
+
+
 #name {
   border: .2em solid #FFF;
   font-size: 1em;
 }
-#email {
-  border: .2em solid #FFF;
-  font-size: 1em;
-}
-#message {
-  border: .2em solid #FFF;
-  font-size: 1em;
-}
-#btn-submit {
-  border: .2em solid #99cfe0;
-  background-color: #99cfe0;
-  padding: 0;
-  font-size: 1em;
-  border-radius: 30%;
-  color: #000;
-}
+
+
+
 .focused {
   color: #30aed6;
   border: #30aed6 solid 3px;
@@ -251,9 +228,59 @@ input, textarea {
   margin: 30px;
 }
 .portfolio-items {
-  column-count: 2;
-  column-gap: 40px;
+  column-count: 3;
+  column-gap: .3em;
 }
+
+form {
+    border-radius: .5em;
+    padding: 1.2em;
+}
+
+input[type=text], select, textarea {
+    width: 70%;
+    border-radius: .4em;
+    margin-top: .6em;
+    margin-bottom: 1em;
+    resize: vertical;
+}
+
+input[type=submit] {
+    padding: 2em 3em;
+    border: 0;
+    border-radius: .8em;
+    cursor: pointer;
+    border: .2em solid #FFF;
+}
+
+#btn-submit {
+  width: 5em;
+  height: 2em;
+  display: inline-block;
+  float: right;
+  border: .1em solid #1e5163;
+  background: #1e5163;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 1.2em;
+  position: relative;
+  transition: background 0.5s;
+  text-transform: uppercase;
+}
+
+#btn-submit:hover {
+  background: #d4ebf2;
+  border: .2em solid #1e5163;
+  color: #1e5163;
+  color: #000;
+  font-size: 1.3em;
+}
+
+#message {
+  border: .2em solid #FFF;
+  font-size: 1em;
+}
+
 #credits {
   font-size: .8rem;
 }

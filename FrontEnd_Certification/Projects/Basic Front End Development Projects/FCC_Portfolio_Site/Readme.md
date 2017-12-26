@@ -13,4 +13,5 @@ also log the skills I have learnt/ consolidated along the way.
 
 ### Additions for later
 - More JavaScript
-- Contact Form
+- Make Accessbility friendly 
+- ability to keyboard navigate?
