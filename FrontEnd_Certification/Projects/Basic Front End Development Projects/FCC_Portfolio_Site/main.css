@@ -18,9 +18,7 @@ a {
   text-decoration: none;
   padding: 3px;
 }
-a:hover {
-  text-decoration: inherit;
-}
+
 nav {
   overflow: hidden;
   background: #72bcd4;
@@ -136,17 +134,23 @@ table th {
   color: #000;
   background: #FFF;
 }
+
+#projects {
+  max-width: auto;
+  max-height: auto;
+}
+
 #portfolio-intro {
   padding: 10px 10px;
   text-align: center;
 }
 .portfolio-items {
-  -webkit-columns: 2 40px;
-  -moz-columns: 2 40px;
-  columns: 2 40px;
-  -webkit-column-gap: 3em;
-  -moz-column-gap: 3em;
-  column-gap: 3em;
+  -webkit-columns: 3 40px;
+  -moz-columns: 3 40px;
+  columns: 3 2em;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 1.3em;
 }
 a:hover .portfolio-img {
   transform: scale(1.15);
@@ -156,7 +160,7 @@ figure {
   overflow: hidden;
 }
 figcaption {
-  margin-top: 15px;
+  margin-top: .1em;
 }
 .portofolio-img {
   border: none;
@@ -189,6 +193,11 @@ section .btn-lg:hover {
   color: #FFF;
   font-size: 1.3em;
 }
+
+.social:hover {
+  color: #FFF;
+}
+
 .before .after {
   background-size: contain;
   width: 200px;
@@ -270,7 +279,7 @@ input[type=submit] {
 
 #btn-submit:hover {
   background: #d4ebf2;
-  border: .2em solid #1e5163;
+   border: .2em solid #1e5163;
   color: #1e5163;
   color: #000;
   font-size: 1.3em;
